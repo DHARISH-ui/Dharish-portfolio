@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhari</title>
+     <!-- -------framework----- -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            width:100%;
+            height:100%;
+            font-family: 'proxima nova';
+        }
+
+        .header{
+            background-color: #000;
+            position:fixed;
+            width:100%;
+            padding:10px 0px;
+            top:0px;
+        }
+        .header_row{
+            display:flex;
+            align-items: center;
+        }
+        .header .logo h2{
+            color:#dd955a;
+            margin:0px;
+            font-size: 26px;
+            padding: 10px 0px;
+            font-weight: 600;
+        }
+        .header .menu_bar .nav-link{
+            color:#fff;
+            font-size: 18px;
+            padding: 10px 16px;
+            transition: .5s;
+        } 
+        .header .menu_bar .nav-link:hover,
+        .header .menu_bar .nav-link:focus,
+        .header .menu_bar .nav-link:active{
+            color:#dd955a;
+            background:rgb(39, 39, 39);
+            border-radius: 5px;
+        } 
+        .mob_res_menu{
+            display:flex;
+        }
+        .logo a{
+            text-decoration: none;
+        }
+        .mob_res_menu .logo{
+            width:50%;
+        }
+        .menu_bar_res{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            width:50%;
+        }
+        .menu_bar_res i{
+            color:#fff;
+            font-size:24px;
+        }
+        @media screen and (max-width:992px) and (max-width:992){}
+
+        @media screen and (max-width:992px){
+            .container{
+                max-width: 900px !important;
+            }
+            .header .menu_bar .nav-link {
+                font-size: 18px;
+                padding: 10px 10px;
+            }
+        }
+        @media only screen and (min-width:800px){
+            .mob_res_menu{
+                display:none;
+            }
+        }
+        @media only screen and (max-width:800px){
+            .header_row{
+                display:none;
+            }
+        }
+        .cs{
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- =============header============ -->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="row header_row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="logo">
+                            <a href="#">
+                                <h2>DHARISH KUMAR</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-6">
+                        <div class="menu_bar">
+                            <nav class="navbar navbar-expand-sm justify-content-end">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about_me">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#myskill">Skills</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Work experience</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Education</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="mob_res_menu">
+                    <div class="logo">
+                        <h2>DHARISH KUMAR</h2>
+                    </div>
+                    <div class="menu_bar_res">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- =============header============ -->
+    <div class="container">
+        <div class="cs">Coming Soon...</div>
+    </div>
+</body>
+</html>
